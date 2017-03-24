@@ -1,0 +1,97 @@
+.navbar-brand {
+    position: relative;
+    top: 0px;
+    width: 250px;
+    text-align: center;
+}
+
+.shadow {
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.btn i {
+    line-height: @line-height-base;
+}
+
+body {
+    padding-top: @navbar-height + 25px;
+    padding-bottom: 0px;
+    background-color: @body-bg;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 15px 15px;
+    min-height: 568px;
+    background-color: @body-bg;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 15px 15px;
+        border-left: 1px solid #ccc;
+    }
+}
+
+.navbar-right {
+    margin-right: 15px;
+}
+
+.modal-body .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.row.col-padding-none div:first-child {
+   padding-right: 0 !important;
+}
+
+.row.col-padding-none div:last-child {
+   padding-left: 0 !important;
+}
+
+.row.col-padding-none div:not(:first-child):not(:last-child) {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+
+.row.col-padding-xs div:first-child {
+   padding-right: @padding-xs !important;
+}
+
+.row.col-padding-xs div:last-child {
+   padding-left: 0 !important;
+}
+
+.row.col-padding-xs div:not(:first-child):not(:last-child) {
+   padding-left: @padding-xs !important;
+   padding-right: @padding-xs !important;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#noty_topRight_layout_container {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.transitionable {
+    animation: transitionable 1s forwards;
+}
+@keyframes transitionable {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
